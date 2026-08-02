@@ -740,6 +740,10 @@ case "${targ}" in
     targ_defvec=i386_elf32_vec
     targ_selvecs="iamcu_elf32_vec i386_coff_lynx_vec i386_aout_lynx_vec"
     ;;
+  i[3-7]86-*-galaxyos*)
+    targ_defvec=i386_elf32_vec
+    targ_selvecs=
+    ;;
   i[3-7]86-*-gnu*)
     targ_defvec=i386_elf32_vec
     targ_selvecs=iamcu_elf32_vec

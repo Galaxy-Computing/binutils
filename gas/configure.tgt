@@ -249,6 +249,7 @@ case ${generic_target} in
   i386-*-msdosdjgpp* \
   | i386-*-go32*)			fmt=coff em=go32 ;;
   i386-*-gnu*)				fmt=elf em=gnu ;;
+  i386-*-galaxyos*)			fmt=elf em=gnu ;;
   i386-*-msdos*)			fmt=aout ;;
   i386-*-moss*)				fmt=elf ;;
   i386-*-pe)				fmt=coff em=pe ;;
