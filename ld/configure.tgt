@@ -416,7 +416,6 @@ i[3-7]86-*-freebsd* | i[3-7]86-*-kfreebsd*-gnu)
 i[3-7]86-*-galaxyos*)
 			targ_emul=elf_i386_galaxyos
 			targ_extra_emuls=elf_i386
-			NATIVE_LIB_DIRS='/galaxyos/i386'
 			;;
 i[3-7]86-*-gnu*)	targ_emul=elf_i386
 			targ_extra_emuls=elf_iamcu
@@ -1131,6 +1130,10 @@ i[3-7]86-*-solaris*)
 
 i[3-7]86-pc-interix*)
   NATIVE_LIB_DIRS='/usr/local/lib $$INTERIX_ROOT/usr/lib /lib /usr/lib'
+  ;;
+
+i[3-7]86-*-galaxyos*)
+  NATIVE_LIB_DIRS='/galaxyos/i386'
   ;;
 
 ia64-*-aix*)
